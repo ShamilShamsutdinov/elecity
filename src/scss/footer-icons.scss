@@ -1,0 +1,32 @@
+.footer-icons {
+  margin-bottom: 60px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    // padding: 0px 200px 0px 200px;
+
+  }
+  &__item {
+    width: 100%;
+    max-width: 235px;
+
+  }
+
+  &__img {
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #1E1E1E;
+  }
+
+}

@@ -1,0 +1,119 @@
+.swiper {
+  width: 100%;
+  height: 460px;
+  background: radial-gradient(33.06% 190.55% at 66.94% 44.11%, #7FB1ED 0%, #437FC8 34.66%, rgba(28, 80, 143, 0.95) 72.16%, #1C4E8A 87.8%, #1A467C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    height: 360px;
+  }
+
+}
+
+.swiper-slide{
+  padding-left: 114px;
+  padding-right: 114px;
+  padding-top: 19px;
+  background-image: url('../img/indexSliderMask.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-wrapper{
+  position: relative;
+}
+
+.index-slider__item{
+  display: flex;
+  @media screen and (max-width: 768px) {
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     justify-content: center;
+  }
+
+  &-content{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 500px;
+    padding-top: 85px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      padding-top: 0px;
+    }
+
+  }
+
+  &-title{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 50px;
+    color: #FFFFFF;
+    @media screen and (max-width: 1200px) {
+      font-size: 35px;
+      line-height: 40px;
+
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 25px;
+      line-height: 35px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &-text{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 55px;
+    min-height: 93px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+    @media screen and (max-width: 991px) {
+      font-size: 18px;
+      line-height: 28px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+     text-align: center;
+    }
+  }
+
+  &-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: rgba(28, 80, 143, 0.95);
+    background: #FFFFFF;
+    padding: 18px 46px 18px 46px;
+    border-radius: 30px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &-picture{
+    width: 100%;
+    max-width: 600px;
+
+    img{
+      @media screen and (max-width: 768px) {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 150px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+
+}
+

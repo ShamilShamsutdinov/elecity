@@ -1,0 +1,32 @@
+.index-stat {
+
+  &__wrapper {
+    padding-bottom: 20px;
+
+  }
+
+  &__title {
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1E1E1E;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 33px;
+    padding-bottom: 7px;
+
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1E1E1E
+  }
+
+  p{
+    margin-top: 20px;
+  }
+
+}
+

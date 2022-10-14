@@ -1,0 +1,139 @@
+.category-product{
+
+  &__setting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__fast-filter {
+  }
+
+  &__ff-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #7FB1ED;
+    border-radius: 30px;
+    padding: 13px 31px 13px 21px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__ff-close {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/close-filter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__view-setting {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+
+  }
+
+  &__view-popular {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #404040;
+    margin-right: 40px;
+    padding: 0px 20px 0px 0px;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 0px;
+      width: 10px;
+      height: 8px;
+      background-image: url(../img/open-list.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1;
+    }
+
+  }
+
+  &__view-num {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #404040;
+    margin-right: 40px;
+    b{
+      font-weight: 600;
+      margin-left: 5px;
+    }
+
+  }
+
+  &__view-line {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/view1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 18px;
+  }
+
+  &__view-block {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/view2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+  }
+
+  .short-item__item{
+    border-top: none;
+  }
+
+
+
+  &__more-product {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #437FC8;
+    text-align: center;
+
+  }
+
+  &__more-link {
+    color: #437FC8;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+

@@ -1,0 +1,66 @@
+// @mixin font($font_name, $file_name, $weight, $style) {
+//     @font-face {
+//     font-family: $font_name;
+//     font-display: swap;
+//     src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+//     font-weight: #{$weight};
+//     font-style: #{$style};
+//     }
+// }
+
+@import "header";
+@import "index-slider";
+@import "breadcrumbs";
+@import "category-page";
+@import "category-product";
+@import "category-filter";
+@import "page-nav";
+@import "short-item";
+@import "index-popular-product";
+@import "index-catalog";
+@import "index-news";
+@import "index-stat";
+@import "footer-icons";
+@import "footer";
+
+
+*,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+
+body {
+    background-color: #fff;
+    color: #1E1E1E;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.container{
+    width: 100%;
+    max-width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.h3-title{
+  display: block;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #1E1E1E;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 33px;
+  padding-bottom: 7px;
+}

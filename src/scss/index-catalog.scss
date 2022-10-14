@@ -1,0 +1,79 @@
+.index-catalog {
+  margin-bottom: 60px;
+
+  &__title {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+  }
+
+  &__item {
+  }
+  &__category-title {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+  }
+
+  &__category-nav {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #404040;
+    margin-bottom: 10px;
+  }
+
+  &__category-item {
+  }
+  &__category-link {
+    color: #404040;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__category-all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #437FC8;
+    padding-right: 41px;
+    position: relative;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 31px;
+      height: 8px;
+      position: absolute;
+      right: 0px;
+      top: 7px;
+      z-index: 1;
+      background-image: url(../img/ArrowAll.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }
+}
+
